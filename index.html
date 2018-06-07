@@ -1,0 +1,79 @@
+<!doctype HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<title>Kickbass Drum Machine</title>
+
+		<link href="resources/css/reset.css" rel="stylesheet" type="text/css">
+		<link href="resources/css/main.css" rel="stylesheet" type="text/css">
+
+		<link rel="icon" type="image/png" href="resources/img/favicon.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="resources/img/touch-icon-ipad.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="resources/img/touch-icon-ipad-retina.png">
+		<link rel="apple-touch-startup-image" media="(device-width: 768px) and (orientation: landscape)" href="resources/img/ipadstartup.png">
+		<link rel="apple-touch-startup-image" media="(device-width: 1536px)  and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="resources/img/ipadretinastartup.png">
+
+		<script src="resources/js/howler.js" type="text/javascript"></script>
+		<script src="resources/js/jquery.js" type="text/javascript"></script>
+    <script src="resources/js/tap.js" type="text/javascript"></script>
+		<script src="resources/js/script.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="appContent">
+			<!-- HI-HAT CYMBAL -->
+			<div id="hiHat" class="drum" data-drum-sound="hihat">
+        <div class="shield"></div>
+				<img src="resources/img/highhat.svg" alt="hi-hat" class="drumItem belowCymbal" id="hiStill">
+				<img src="resources/img/highhat-p.svg" alt="hi-hat" class="drumItem aboveCymbal" id="hiMove">
+			</div>
+      <!-- CRASH SYMBAL -->
+      <div id="crash" class="drum" data-drum-sound="crash">
+        <div class="shield"></div>
+        <img src="resources/img/crash.svg" alt="crash" class="drumItem belowCymbal" id="crashStill">
+        <img src="resources/img/crash-p.svg" alt="crash" class="drumItem aboveCymbal" id="crashMove">
+      </div>
+      <!-- RIDE CYMBAL -->
+      <div id="ride" class="drum" data-drum-sound="ride">
+        <div class="shield"></div>
+        <img src="resources/img/ride.svg" alt="ride" class="drumItem belowCymbal" id="rideStill">
+        <img src="resources/img/ride-p.svg" alt="ride" class="drumItem aboveCymbal" id="rideMove">
+      </div>
+			<!-- SNARE DRUM -->
+			<div id="snare" class="drum" data-drum-sound="snare">
+        <div class="shield"></div>
+				<img src="resources/img/snare.svg" alt="snare" class="drumItem belowDrum" id="snareStill">
+				<img src="resources/img/snare-p.svg" alt="snare" class="drumItem aboveDrum" id="snareMove">
+			</div>
+			<!-- TOM 1 DRUM -->
+			<div id="tom1" class="drum" data-drum-sound="tomS">
+        <div class="shield"></div>
+				<img src="resources/img/tom1.svg" alt="tom1" class="drumItem belowDrum" id="tom1Still">
+				<img src="resources/img/tom1-p.svg" alt="tom1" class="drumItem aboveDrum" id="tom1Move">
+			</div>
+			<!-- TOM 2 DRUM -->
+			<div id="tom2" class="drum" data-drum-sound="tomM">
+        <div class="shield"></div>
+				<img src="resources/img/tom2.svg" alt="tom2" class="drumItem belowDrum" id="tom2Still">
+				<img src="resources/img/tom2-p.svg" alt="tom2" class="drumItem aboveDrum" id="tom2Move">
+			</div>
+      <!-- TOM 3 DRUM -->
+      <div id="tom3" class="drum" data-drum-sound="tomL">
+        <div class="shield"></div>
+        <img src="resources/img/tom3.svg" alt="tom3" class="drumItem belowDrum" id="tom3Still">
+        <img src="resources/img/tom3-p.svg" alt="tom3" class="drumItem aboveDrum" id="tom3Move">
+      </div>
+			<!-- BASE DRUM -->
+			<div id="base" class="drum" data-drum-sound="kick">
+        <div class="shield"></div>
+				<img src="resources/img/baseDrum.svg" alt="baseDrum" class="belowBase" id="baseDrum">
+				<img src="resources/img/kick.svg" alt="kick" class="belowBase kick" id="kickStill">
+				<img src="resources/img/kick-p.svg" alt="kick" class="belowBase kick" id="kickMove">
+			</div>
+		</div>
+	</body>
+</html>
